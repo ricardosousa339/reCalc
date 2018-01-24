@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36474f"
+    android:gravity="right"
+    android:orientation="vertical"
+    tools:context="com.ccomp.ricardo.recalc.MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewvisor"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:layout_weight="0.9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.9"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/visor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="2+1x3-4"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonClean"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contextClickable="true"
+            android:elegantTextHeight="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:hapticFeedbackEnabled="true"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/buttonMaisMenos"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="+/-" />
+
+        <Button
+            android:id="@+id/buttonPorcentagem"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/buttonDel"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="DEL"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSete"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/buttonOito"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/buttonNove"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/buttonDivisao"
+            style="@style/Operations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="÷" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/buttonQuatro"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/buttonCinco"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/buttonSeis"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/buttonMultiplicacao"
+            style="@style/Operations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="×" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/buttonUm"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/buttonDois"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/buttonTres"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/buttonSubtracao"
+            style="@style/Operations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="–" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/buttonZero"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/buttonPonto"
+            style="@style/Numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="." />
+
+        <Button
+            android:id="@+id/buttonIgual"
+            style="@style/Equal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/buttonAdicao"
+            style="@style/Operations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="+" />
+    </LinearLayout>
+</LinearLayout>
